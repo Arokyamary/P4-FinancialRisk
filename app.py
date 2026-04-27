@@ -24,7 +24,7 @@ with tab1:
         fig = go.Figure(go.Indicator(
             mode='gauge+number', value=score, title={'text':'Credit Score'},
             gauge={'axis':{'range':[300,850]},
-            'bar':{'color':'#00d4aa' if score>700 else '#f559e0b' if score>600 else '#f87171'}}
+            'bar':{'color':'#00d4aa' if score>700 else '#f59e0b' if score>600 else '#f87171'}}
         ))
         fig.update_layout(template='plotly_dark', height=300)
         st.plotly_chart(fig, use_container_width=True)
