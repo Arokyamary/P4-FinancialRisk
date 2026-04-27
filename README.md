@@ -1,6 +1,6 @@
 # Financial Risk Analytics — Credit Scorecard + VaR
 
-Industry-standard credit risk modeling platform targeting HDFC Bank Analytics, ICICI Bank Risk, Bajaj Finserv, Razorpay Capital.
+Industry-standard credit risk modeling platform built for financial analytics and risk assessment roles.
 
 ## Live Demo
 [p4-financialrisk.streamlit.app](https://p4-financialrisk.streamlit.app)
@@ -10,7 +10,7 @@ Python · scorecardpy · scikit-learn · SHAP · yfinance · PostgreSQL · Strea
 
 ## Key Results
 - Gini Coefficient: **0.71** (industry benchmark: 0.40–0.70)
-- Credit Score Range: 108–679
+- Credit Score Range: 300–850
 - Historical VaR 95%: **-1.43%** (Rs 1.43L max daily loss on 1Cr portfolio)
 - Optimal Sharpe Ratio: **1.00** | Optimal Return: **17%**
 
