@@ -22,9 +22,13 @@ with tab1:
         score = int(850 - risk_pct * 5)
         grade = 'A' if score>750 else 'B' if score>700 else 'C' if score>650 else 'D' if score>600 else 'E'
         fig = go.Figure(go.Indicator(
-            mode='gauge+number', value=score, title={'text':'Credit Score'},
-            gauge={'axis':{'range':[300,850]},
-            'bar':{'color':'#00d4aa' if score>700 else '#f59e0b' if score>600 else '#f87171'}}
+            mode='gauge+number',
+            value=score,
+            title={'text':'Credit Score'},
+            gauge={
+                'axis':{'range':[300,850]},
+                'bar':{'color':'#00d4aa' if score>700 else '#f59e0b' if score>600 else '#f87171'}
+            }
         ))
         fig.update_layout(template='plotly_dark', height=300)
         st.plotly_chart(fig, use_container_width=True)
