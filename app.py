@@ -29,11 +29,14 @@ with tab1:
         fig.update_layout(template='plotly_dark', height=300)
         st.plotly_chart(fig, use_container_width=True)
         st.metric('Grade', grade)
-        if score > 700: st.success('LOW RISK — Approve')
-        elif score > 600: st.warning('MEDIUM RISK — Review')
-        else: st.error('HIGH RISK — Decline')
+        if score > 700:
+            st.success('LOW RISK — Approve')
+        elif score > 600:
+            st.warning('MEDIUM RISK — Review')
+        else:
+            st.error('HIGH RISK — Decline')
 
 with tab2:
     st.subheader('Portfolio Value at Risk')
     st.image('efficient_frontier.png', caption='10K Monte Carlo Simulations — NIFTY50 Portfolio')
-    s
+    st.image('shap_feature_importance.png', caption='SHAP Feature Importance')
