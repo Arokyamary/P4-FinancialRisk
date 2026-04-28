@@ -94,6 +94,7 @@ This platform mimics how real banks assess loan applications internally. It comb
 
 ## Architecture
 
+```
 Kaggle CSV (32K records)
 → pandas cleaning
 → scorecardpy WoE encoding
@@ -106,23 +107,58 @@ Kaggle CSV (32K records)
 → Efficient Frontier
 → Streamlit dashboard
 → Deployed on Streamlit Cloud
-
----
+```
 
 ## Project Structure
 
+```
 P4_FinancialRisk/
-├── data/loan_data.csv              # 32,581 Kaggle loan records
-├── models/scorecard_model.pkl      # Trained model
-├── scorecard_model.py              # Credit scorecard ML model
-├── portfolio_var.py                # Monte Carlo VaR simulation
-├── load_to_postgres.py             # PostgreSQL data pipeline
-├── app.py                          # Streamlit dashboard
-├── efficient_frontier.png          # Generated chart
-├── shap_feature_importance.png     # Generated SHAP chart
-└── requirements.txt                # Package versions
+├── data/
+│   └── loan_data.csv                  # 32,581 Kaggle loan records
+├── models/
+│   └── scorecard_model.pkl            # Trained model
+├── scorecard_model.py                 # Credit scorecard ML model
+├── portfolio_var.py                   # Monte Carlo VaR simulation
+├── load_to_postgres.py                # PostgreSQL data pipeline
+├── app.py                             # Streamlit dashboard
+├── efficient_frontier.png             # Generated chart
+├── shap_feature_importance.png        # Generated SHAP chart
+└── requirements.txt                   # Package versions
+```
 
----
+## Project Structure
+
+```
+P4_FinancialRisk/
+├── data/
+│   └── loan_data.csv                  # 32,581 Kaggle loan records
+├── models/
+│   └── scorecard_model.pkl            # Trained model
+├── scorecard_model.py                 # Credit scorecard ML model
+├── portfolio_var.py                   # Monte Carlo VaR simulation
+├── load_to_postgres.py                # PostgreSQL data pipeline
+├── app.py                             # Streamlit dashboard
+├── efficient_frontier.png             # Generated chart
+├── shap_feature_importance.png        # Generated SHAP chart
+└── requirements.txt                   # Package versions
+```
+
+## Project Structure
+
+```
+P4_FinancialRisk/
+├── data/
+│   └── loan_data.csv                  # 32,581 Kaggle loan records
+├── models/
+│   └── scorecard_model.pkl            # Trained model
+├── scorecard_model.py                 # Credit scorecard ML model
+├── portfolio_var.py                   # Monte Carlo VaR simulation
+├── load_to_postgres.py                # PostgreSQL data pipeline
+├── app.py                             # Streamlit dashboard
+├── efficient_frontier.png             # Generated chart
+├── shap_feature_importance.png        # Generated SHAP chart
+└── requirements.txt                   # Package versions
+```
 
 ## How to Run Locally
 
